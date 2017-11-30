@@ -1,9 +1,12 @@
-package com.example.travelbytrain;
+package com.example.travelbytrain.vue;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+
+import com.example.travelbytrain.R;
+import com.example.travelbytrain.controler.GareActivity;
 
 public class MainActivity extends AppCompatActivity {
 

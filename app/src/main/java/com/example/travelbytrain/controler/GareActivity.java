@@ -1,7 +1,9 @@
-package com.example.travelbytrain;
+package com.example.travelbytrain.controler;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.travelbytrain.R;
 
 public class GareActivity extends AppCompatActivity {
 
