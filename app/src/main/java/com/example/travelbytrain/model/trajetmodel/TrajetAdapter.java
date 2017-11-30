@@ -13,7 +13,7 @@ import java.util.ArrayList;
  * Created by DimsDev on 29/11/2017.
  */
 
-class TrajetAdapter extends RecyclerView.Adapter<TrajetViewHolder> {
+public class TrajetAdapter extends RecyclerView.Adapter<TrajetViewHolder> {
     private final ArrayList<GareHoraire> listHoraires;
 
     public TrajetAdapter(ArrayList<GareHoraire> listHoraires) {

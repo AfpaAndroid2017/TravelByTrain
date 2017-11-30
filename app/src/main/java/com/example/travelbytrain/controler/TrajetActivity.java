@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.example.travelbytrain.R;
 import com.example.travelbytrain.model.trajetmodel.GareHoraire;
+import com.example.travelbytrain.model.trajetmodel.*;
 
 import java.util.ArrayList;
 
@@ -28,7 +29,7 @@ public class TrajetActivity extends AppCompatActivity {
         rclViewTrajet = (RecyclerView) findViewById(R.id.rclVtrajet);
         rclViewTrajet.setLayoutManager(new LinearLayoutManager(this));
         //rclViewTrajet.setLayoutManager(new GridLayoutManager(this, 2));
-        rclViewTrajet.setAdapter(new TrajetAdapter(gareHoraires));
+        rclViewTrajet.setAdapter(new TrajetAdapter (gareHoraires));
 
         gareHoraires.add(new GareHoraire("29/11","08h14","29/11","09h09"));
         gareHoraires.add(new GareHoraire("29/11","09h40","29/11","10h34"));
