@@ -1,10 +1,10 @@
-package com.example.travelbytrain.garemodel;
+package com.example.travelbytrain.model.garemodel;
 
 import android.util.Log;
 
 
-import com.example.travelbytrain.model.Fields;
-import com.example.travelbytrain.model.ListeGare;
+import com.example.travelbytrain.model.jsongaremodel.Fields;
+import com.example.travelbytrain.model.jsongaremodel.ListeGare;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 

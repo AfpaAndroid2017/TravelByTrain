@@ -1,5 +1,5 @@
 
-package com.example.travelbytrain.model;
+package com.example.travelbytrain.model.jsongaremodel;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;

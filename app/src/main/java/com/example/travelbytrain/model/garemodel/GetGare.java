@@ -1,9 +1,9 @@
-package com.example.travelbytrain.garemodel;
+package com.example.travelbytrain.model.garemodel;
 
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.example.travelbytrain.model.ListeGare;
+import com.example.travelbytrain.model.jsongaremodel.ListeGare;
 
 
 /**

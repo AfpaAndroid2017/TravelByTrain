@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:id="@+id/lLayoutTrajet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/btnItineraire"
@@ -14,7 +16,8 @@
         android:layout_marginStart="8dp"
 
         android:layout_marginTop="8dp"
-        android:text="Itinéraire" />
+        android:text="Itinéraire"
+        tools:text="@string/btn_iti" />
 
     <TextView
         android:id="@+id/ttvDepartArrive"
@@ -26,20 +29,21 @@
         android:layout_marginStart="8dp"
 
         android:layout_marginTop="8dp"
-        android:text="TextView" />
+        android:text="Paris Montparnass / Le Mans"
+        tools:text="Paris Montparnass / Le Mans" />
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/rclVtrajet"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
 
+        android:layout_height="match_parent"
         android:layout_marginBottom="8dp"
+
         android:layout_marginLeft="8dp"
 
         android:layout_marginRight="8dp"
-
         android:layout_marginTop="8dp"
         tools:listitem="@layout/ligne_horaire" />
-
 
 
 </LinearLayout>

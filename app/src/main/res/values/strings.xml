@@ -1,3 +1,13 @@
 <resources>
+    <!-- By Lead JC Start -->
     <string name="app_name">Travel By Train</string>
+    <!-- By Lead JC End -->
+
+    <!-- By MB Start -->
+    <string name="btn_iti">Itinéraire</string>
+    <string name="date_depart_trajet">Date départ</string>
+    <string name="heure_depart_trajet">Heure départ</string>
+    <string name="date_arrivee_trajet">Date arrivée</string>
+    <string name="heure_arrivee_trajet">Heure arrivée</string>
+    <!-- By MB End -->
 </resources>

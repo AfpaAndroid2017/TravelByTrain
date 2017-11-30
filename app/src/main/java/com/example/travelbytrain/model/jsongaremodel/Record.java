@@ -1,5 +1,5 @@
 
-package com.example.travelbytrain.model;
+package com.example.travelbytrain.model.jsongaremodel;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

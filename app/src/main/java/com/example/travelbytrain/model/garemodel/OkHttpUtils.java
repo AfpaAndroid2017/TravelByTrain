@@ -1,4 +1,4 @@
-package com.example.travelbytrain.garemodel;
+package com.example.travelbytrain.model.garemodel;
 
 
 import android.util.Log;
