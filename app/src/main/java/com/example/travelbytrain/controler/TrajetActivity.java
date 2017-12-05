@@ -25,6 +25,9 @@ public class TrajetActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trajet);
 
+
+
+
         gareHoraires = new ArrayList<>();
         rclViewTrajet = (RecyclerView) findViewById(R.id.rclVtrajet);
         rclViewTrajet.setLayoutManager(new LinearLayoutManager(this));
