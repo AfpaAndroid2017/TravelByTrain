@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     MainActivity.this.finish();
 
                 }
-            }, 5000);
+            }, 3000);
         }
     }
 

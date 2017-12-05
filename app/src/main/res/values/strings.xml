@@ -1,6 +1,8 @@
 <resources>
     <!-- By Lead JC Start -->
     <string name="app_name">Travel By Train</string>
+    <string name="liste_gare_depart">Liste gare départ</string>
+    <string name="liste_gare_arrivee">Liste gare arrivée</string>
     <!-- By Lead JC End -->
 
     <!-- By MB Start -->

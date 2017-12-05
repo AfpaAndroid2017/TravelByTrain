@@ -47,27 +47,29 @@
     </RadioGroup>
 
     <AutoCompleteTextView
-        android:id="@+id/actDepart"
+        android:id="@+id/actGareDepart"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:dropDownWidth="match_parent"
+        android:hint="@string/liste_gare_depart"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/rdgRechercheGare" />
 
     <AutoCompleteTextView
-        android:id="@+id/actGareArrive"
+        android:id="@+id/actGareArrivee"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
+        android:hint="@string/liste_gare_arrivee"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ttvGareArrivee" />
+        app:layout_constraintTop_toBottomOf="@+id/actGareDepart" />
 
     <Button
         android:id="@+id/btnValider"
@@ -81,32 +83,5 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rdgRechercheGare"
-        tools:text="Gare de départ" />
-
-    <TextView
-        android:id="@+id/ttvGareArrivee"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/actDepart"
-        tools:text="Gare d'arrivée" />
 
 </android.support.constraint.ConstraintLayout>
