@@ -70,7 +70,7 @@ public class GareActivity extends Activity implements GetGare.GetGareResult ,  R
 
 
 
-        //new GetGare(GareActivity.this).execute();
+        //new GetHoraire(GareActivity.this).execute();
 
 
 
@@ -80,6 +80,7 @@ public class GareActivity extends Activity implements GetGare.GetGareResult ,  R
         btnValider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.w("TAG",gareArriveeAdapter.getGareChoisie().getLibelle_gare() );
                 Intent intent = new Intent(GareActivity.this ,TrajetActivity.class );
                 startActivity(intent);
 

@@ -20,7 +20,7 @@ public class OpenDataGare {
 
     //private static final String WS_URL = "https://data.iledefrance.fr/api/records/1.0/search/?dataset=carte-des-pharmacies-dile-de-france&facet=libdepartement&facet=commune";
    // private static final String WS_URL = "https://data.iledefrance.fr/api/records/1.0/search/?dataset=carte-des-pharmacies-dile-de-france&rows=3991&facet=libdepartement&facet=commune";
-    private static final String WS_URL ="https://data.sncf.com/api/records/1.0/search/?dataset=liste-des-gares&rows=5032&facet=voyageurs";
+    private static final String WS_URL ="https://data.sncf.com/api/records/1.0/search/?dataset=liste-des-gares&rows=100&facet=voyageurs";
 
     public static ListeGare getGareDuServeur() throws Exception {
 

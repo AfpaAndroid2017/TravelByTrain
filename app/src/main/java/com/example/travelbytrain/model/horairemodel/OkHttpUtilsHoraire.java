@@ -1,4 +1,4 @@
-package com.example.travelbytrain.model.jsonhorairemodel;
+package com.example.travelbytrain.model.horairemodel;
 
 
 import android.util.Log;

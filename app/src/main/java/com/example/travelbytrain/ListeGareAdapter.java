@@ -23,6 +23,8 @@ import java.util.ArrayList;
 public class ListeGareAdapter extends ArrayAdapter<Fields> {
     ArrayList<Fields> listeGare, suggestions, gareTemps;
 
+    Fields gareChoisie;
+
     public ListeGareAdapter(Context context, ArrayList<Fields> listeGare) {
         super(context, android.R.layout.activity_list_item, listeGare);
         this.listeGare =listeGare ;
@@ -30,6 +32,10 @@ public class ListeGareAdapter extends ArrayAdapter<Fields> {
 
         this.gareTemps = new ArrayList<>(listeGare);
 
+    }
+
+    public Fields getGareChoisie() {
+        return gareChoisie;
     }
 
     public void setGare (ArrayList<Fields> listeGare) {
@@ -69,6 +75,7 @@ public class ListeGareAdapter extends ArrayAdapter<Fields> {
         public CharSequence convertResultToString(Object resultValue) {
             Log.w("TAG","convertResultToString" );
             Fields fields = (Fields) resultValue;
+            gareChoisie =fields ;
             return fields.getLibelle_gare();
         }
 

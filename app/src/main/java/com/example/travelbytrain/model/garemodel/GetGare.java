@@ -23,11 +23,11 @@ public class GetGare extends AsyncTask {
     @Override
     protected Object doInBackground(Object[] params) {
         try {
-            Log.w("TAG", "doInBackground pharmacie 1");
+            Log.w("TAG", "doInBackground gare 1");
             listeGare = OpenDataGare.getGareDuServeur();
             //Log.w("TAG", "doInBackground pharmacie 2");
         } catch (Exception e) {
-            Log.w("TAG", "doInBackground pharmacie "+e.toString());
+            Log.w("TAG", "doInBackground gare "+e.toString());
             exception = e;
         }
 
