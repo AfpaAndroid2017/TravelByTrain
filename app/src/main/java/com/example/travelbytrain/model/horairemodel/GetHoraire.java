@@ -4,7 +4,7 @@ import android.os.AsyncTask;
 import android.util.Log;
 
 
-
+import com.example.travelbytrain.model.GareDepartArrivee;
 import com.example.travelbytrain.model.jsongaremodel.ListeGare;
 import com.example.travelbytrain.model.jsonhorairemodel.HoraireTrajet;
 
@@ -18,16 +18,18 @@ public class GetHoraire extends AsyncTask {
     private HoraireTrajet horaireTrajet ;
     private Exception exception;
     private GetHoraireResult  getHoraireResult;
+    GareDepartArrivee gareDepartArrivee;
 
-    public GetHoraire(GetHoraireResult getHoraireResult) {
+    public GetHoraire(GetHoraireResult getHoraireResult , GareDepartArrivee gareDepartArrivee) {
         this.getHoraireResult = getHoraireResult;
+        this.gareDepartArrivee = gareDepartArrivee ;
     }
 
     @Override
     protected Object doInBackground(Object[] params) {
         try {
             Log.w("TAG", "doInBackground horaire 1");
-            horaireTrajet = OpenDataHoraire.getHoraireDuServeur();
+            horaireTrajet = OpenDataHoraire.getHoraireDuServeur(this.gareDepartArrivee);
             //Log.w("TAG", "doInBackground horaire 2");
         } catch (Exception e) {
             Log.w("TAG", "doInBackground horaire "+e.toString());

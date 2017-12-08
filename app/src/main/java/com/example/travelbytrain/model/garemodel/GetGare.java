@@ -37,6 +37,7 @@ public class GetGare extends AsyncTask {
     @Override
     protected void onPostExecute(Object o) {
         super.onPostExecute(o);
+        Log.w("TAG", "onPostExecute gare ");
         if (getGareResult != null) {
             if (exception != null) {
                 getGareResult.getGareResultErreur(exception);

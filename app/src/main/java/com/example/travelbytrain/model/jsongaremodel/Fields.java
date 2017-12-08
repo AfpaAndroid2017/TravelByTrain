@@ -1,11 +1,12 @@
 
 package com.example.travelbytrain.model.jsongaremodel;
 
+import java.io.Serializable;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Fields {
+public class Fields implements Serializable {
 
     @SerializedName("departement")
     @Expose

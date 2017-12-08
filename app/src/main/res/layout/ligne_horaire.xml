@@ -62,7 +62,6 @@
                 android:layout_weight="1"
                 android:background="?android:selectableItemBackground"
                 android:fontFamily="sans-serif"
-                android:padding="8dp"
                 android:textAlignment="center"
                 android:textColor="#333"
                 android:textSize="12sp" />

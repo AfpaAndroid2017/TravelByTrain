@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import com.example.travelbytrain.ListeGareAdapter;
 import com.example.travelbytrain.R;
+import com.example.travelbytrain.model.GareDepartArrivee;
 import com.example.travelbytrain.model.garemodel.GetGare;
 import com.example.travelbytrain.model.jsongaremodel.Fields;
 import com.example.travelbytrain.model.jsongaremodel.ListeGare;
@@ -80,9 +81,18 @@ public class GareActivity extends Activity implements GetGare.GetGareResult ,  R
         btnValider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.w("TAG",gareArriveeAdapter.getGareChoisie().getLibelle_gare() );
-                Intent intent = new Intent(GareActivity.this ,TrajetActivity.class );
-                startActivity(intent);
+
+                if( (gareDepartAdapter.getGareChoisie() != null ) && (gareArriveeAdapter.getGareChoisie() != null ) ) {
+                    GareDepartArrivee gareDepartArrivee = new GareDepartArrivee(gareDepartAdapter.getGareChoisie() ,gareArriveeAdapter.getGareChoisie() );
+
+                    Log.w("TAG"," G D :"+gareDepartArrivee.getGareDepart().getLibelle_gare() );
+                    Log.w("TAG"," G A :"+gareDepartArrivee.getGareArrivee().getLibelle_gare() );
+
+
+                    Intent intent = new Intent(GareActivity.this ,TrajetActivity.class );
+                    intent.putExtra("KEY_GARE", gareDepartArrivee);
+                    startActivity(intent);
+                }
 
             }
         });

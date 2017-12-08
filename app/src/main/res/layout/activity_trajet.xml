@@ -6,31 +6,60 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btnItineraire"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
+        android:orientation="vertical">
 
-        android:layout_marginTop="8dp"
-        android:text="Itinéraire"
-        tools:text="@string/btn_iti" />
+        <Button
+            android:id="@+id/btnItineraire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginStart="0dp"
 
-    <TextView
-        android:id="@+id/ttvDepartArrive"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:text="Itinéraire"
+            tools:text="@string/btn_iti" />
 
-        android:layout_marginTop="8dp"
-        android:text="Paris Montparnass / Le Mans"
-        tools:text="Paris Montparnass / Le Mans" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrecedent"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Précédent" />
+
+            <Button
+                android:id="@+id/btnSuivant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Suivant" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ttvDepartArrive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginTop="8dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rclVtrajet"

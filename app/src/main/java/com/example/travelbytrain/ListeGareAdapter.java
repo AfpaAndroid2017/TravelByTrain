@@ -31,7 +31,7 @@ public class ListeGareAdapter extends ArrayAdapter<Fields> {
         this.suggestions = new ArrayList<>(listeGare);
 
         this.gareTemps = new ArrayList<>(listeGare);
-
+        gareChoisie =null ;
     }
 
     public Fields getGareChoisie() {
